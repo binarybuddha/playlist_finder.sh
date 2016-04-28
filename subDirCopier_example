@@ -1,0 +1,233 @@
+$src = "c:\sauce"
+$dst = "c:\place"
+dir $src -Recurse
+dir $dst -Recurse
+dir $src -Directory | select -ExcludeProperty FullName | Copy-Item -Destination $dst -Recurse
+dir $src -Recurse
+dir $dst -Recurse
+
+
+
+    Directory: C:\sauce
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+d----         4/28/2016   1:40 PM            1.this                                                                                                                  
+d----         4/28/2016   1:40 PM            2.thing                                                                                                                 
+d----         4/28/2016   1:40 PM            3.that                                                                                                                  
+d----         4/28/2016   1:41 PM            4.time                                                                                                                  
+-a---         4/28/2016   1:46 PM          0 garbage                                                                                                                 
+-a---         4/28/2016   1:46 PM          0 shadow                                                                                                                  
+-a---         4/28/2016   1:45 PM          0 virusCode.txt                                                                                                           
+
+
+    Directory: C:\sauce\1.this
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce\2.thing
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce\3.that
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (10).txt                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (11).txt                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (8).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (9).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce\4.time
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (8).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+d----         4/28/2016   1:40 PM            1.this                                                                                                                  
+d----         4/28/2016   1:40 PM            2.thing                                                                                                                 
+d----         4/28/2016   1:40 PM            3.that                                                                                                                  
+d----         4/28/2016   1:41 PM            4.time                                                                                                                  
+-a---         4/28/2016   1:46 PM          0 garbage                                                                                                                 
+-a---         4/28/2016   1:46 PM          0 shadow                                                                                                                  
+-a---         4/28/2016   1:45 PM          0 virusCode.txt                                                                                                           
+
+
+    Directory: C:\sauce\1.this
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce\2.thing
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce\3.that
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (10).txt                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (11).txt                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (8).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (9).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\sauce\4.time
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (8).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\place
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+d----         4/28/2016   1:58 PM            1.this                                                                                                                  
+d----         4/28/2016   1:58 PM            2.thing                                                                                                                 
+d----         4/28/2016   1:58 PM            3.that                                                                                                                  
+d----         4/28/2016   1:58 PM            4.time                                                                                                                  
+
+
+    Directory: C:\place\1.this
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\place\2.thing
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\place\3.that
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (10).txt                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (11).txt                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (8).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (9).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.txt                                                                                                                
+
+
+    Directory: C:\place\4.time
+
+
+Mode                LastWriteTime     Length Name                                                                                                                    
+----                -------------     ------ ----                                                                                                                    
+-a---         4/28/2016   1:40 PM          0 file - Copy (2).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (3).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (4).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (5).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (6).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (7).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy (8).txt                                                                                                     
+-a---         4/28/2016   1:40 PM          0 file - Copy.txt                                                                                                         
+-a---         4/28/2016   1:40 PM          0 file.tx
